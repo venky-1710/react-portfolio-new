@@ -1,0 +1,43 @@
+/* styles/DarkModeToggle.css */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.toggle-label:hover {
+  transform: scale(1.1);
+}
+
+.toggle-label i {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+/* Animation for the toggle button */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.dark-mode-toggle {
+  animation: fadeIn 0.5s ease-in-out;
+}
