@@ -65,11 +65,15 @@
 }
 
 .about-left {
+  padding: 0 1rem;
+  text-align: center;
   width: 100%; /* Take full width on mobile */
   margin: 0 auto; /* Add this line to center horizontally */
   box-sizing: border-box; /* Add this line to include padding and border in width */
 }
 .about-right {
+  padding: 0 1rem;
+  text-align: center;
   width: 100%; /* Take full width on mobile */
   margin: 0 auto; /* Add this line to center horizontally */
   box-sizing: border-box; /* Add this line to include padding and border in width */
