@@ -246,18 +246,16 @@ body {
 
   .about-content {
     flex-direction: column;
+    align-items: center; /* Add this to center the content */
   }
 
   .about-left, .about-right {
     width: 100%;
+    text-align: center; /* Add this to center the text */
   }
 
   .about-right {
     margin-top: 2rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
   }
 
   .contact-grid {
@@ -276,17 +274,28 @@ body {
   }
 
   .container {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   .social {
     justify-content: center;
   }
 
+  .about-content {
+    padding: 0 1rem; /* Add this to add some padding */
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Use a single column grid layout */
+  }
+
   .btn {
     margin: 2rem auto 0;
   }
   .about-left, .about-right {
-    width: 100%;
+    padding: 0 1rem; /* Add this to add some padding */
+  }
+  .about-right {
+    margin-top: 1.5rem;
   }
 }

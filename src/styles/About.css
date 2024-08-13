@@ -1,54 +1,90 @@
 /* About Section */
 #about {
-    padding: 80px 0;
-  }
-  
-  .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .about-left {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .img-w {
-    width: 100%;
+  padding: 80px 0;
 }
 
-  .about-img {
-    width: 60%;
-    opacity: 0;
-    animation: imageAni 1s ease forwards;
-    animation-delay: 0.8s;
-  }
-  
-  .about-right {
-    width: 60%;
-    opacity: 0;
-    animation: rightSideAni 1s ease forwards;
-  }
-  
-  .about-right-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 100%;
-  }
-  
-  .about-right-content h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-  }
-  
-  .about-right-content p {
-    line-height: 1.7;
-    font-size: 1.2rem;
-    margin-bottom: 1.7rem;
-  }
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-w {
+  width: 100%;
+}
+
+.about-img {
+  width: 60%;
+  opacity: 0;
+  animation: imageAni 1s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.about-right {
+  width: 60%;
+  opacity: 0;
+  animation: rightSideAni 1s ease forwards;
+}
+
+.about-right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+}
+
+.about-right-content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.about-right-content p {
+  line-height: 1.7;
+  font-size: 1.2rem;
+  margin-bottom: 1.7rem;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+.about-img {
+  width: 80%; /* Increase image width on mobile */
+}
+
+.about-content {
+  flex-direction: column; /* Stack elements vertically on mobile */
+  flex-wrap: wrap; /* Allow elements to wrap to next line */
+}
+
+.about-left {
+  width: 100%; /* Take full width on mobile */
+  margin: 0 auto; /* Add this line to center horizontally */
+  box-sizing: border-box; /* Add this line to include padding and border in width */
+}
+.about-right {
+  width: 100%; /* Take full width on mobile */
+  margin: 0 auto; /* Add this line to center horizontally */
+  box-sizing: border-box; /* Add this line to include padding and border in width */
+}
+
+.about-right-content {
+  width: 100%; /* Take full width on mobile */
+  padding: 20px; /* Add some padding on mobile */
+}
+
+.about-right-content h1 {
+  font-size: 2.5rem; /* Reduce font size on mobile */
+}
+
+.about-right-content p {
+  font-size: 1.1rem; /* Reduce font size on mobile */
+}
+}
