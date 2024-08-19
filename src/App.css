@@ -102,6 +102,7 @@ body {
 
 .dark-mode .skill-item,
 .dark-mode .project-item,
+.dark-mode .project-info,
 .dark-mode .contact-info,
 .dark-mode .contact-form {
   background-color: #1a1a1a;
@@ -227,11 +228,6 @@ body {
 
   .container {
     padding: 0 2rem;
-  }
-
-  .page-header {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   nav ul {

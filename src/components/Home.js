@@ -1,5 +1,7 @@
 // components/Home.js
 import React from 'react';
+import pdfFile from '../assets/VENKAT_RESUME.pdf';
+
 import '../styles/Home.css'
 
 function Home() {
@@ -18,7 +20,7 @@ function Home() {
           <a href="https://github.com/venky-1710" target="_blank" rel="noopener noreferrer" style={{"--socialAni": 4}}><i className="fab fa-github"></i></a>
           <a href="https://x.com/venky_1710" target="_blank" rel="noopener noreferrer" style={{"--socialAni": 5}}><i className="fab fa-twitter"></i></a>
         </div>
-        <div className="btn" onClick={() => window.open('./img/VENKAT_RESUME.pdf', '_blank')}>
+        <div className="btn" onClick={() => window.open(pdfFile, '_blank')}>
           <button>Download CV</button>
         </div>
       </div>

@@ -8,10 +8,10 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <a href="#">VENKY</a>
+            <a href="#home">VENKY</a>
           </div>
           <div className="footer-links">
-            <a href="#" className="active">Home</a>
+            <a href="#home" className="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>

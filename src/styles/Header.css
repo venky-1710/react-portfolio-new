@@ -10,16 +10,8 @@
   justify-content: center;
 }
 
-.circular-navbar {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 30px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 600px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+.mobile-header {
+  display: none;
 }
 
 .logo {
@@ -32,6 +24,22 @@
 .logo a {
   text-decoration: none;
   color: var(--nav-text);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.circular-navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -89,17 +97,6 @@ nav ul li a.active {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.mobile-header {
-  display: none;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-/* Header.css */
-/* ... (keep all the previous styles unchanged until the media query) ... */
 
 /* Responsive design for mobile devices */
 @media screen and (max-width: 768px) {
